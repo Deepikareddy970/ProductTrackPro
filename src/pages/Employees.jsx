@@ -20,7 +20,7 @@ function Employees() {
   const fetchEmployees = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/employees"
+        "https://producttrackpro-backend-14m1.onrender.com/api/employees"
       );
 
       setEmployees(res.data);
@@ -37,7 +37,7 @@ function Employees() {
 
     try {
       await axios.post(
-        "https://producttrack-backend-5wd3.onrender.com/api/employees",
+        "https://producttrackpro-backend-14m1.onrender.com/api/employees",
         {
           name,
           role,
@@ -66,7 +66,7 @@ function Employees() {
 
     try {
       await axios.delete(
-        `https://producttrack-backend-5wd3.onrender.com/api/employees/${id}`
+        `https://producttrackpro-backend-14m1.onrender.com/api/employees/${id}`
       );
 
       alert("Employee Deleted Successfully");

@@ -20,7 +20,7 @@ function Production() {
   const fetchProduction = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/production"
+        "https://producttrackpro-backend-14m1.onrender.com/api/production"
       );
 
       setProduction(res.data);
@@ -37,7 +37,7 @@ function Production() {
 
     try {
       await axios.post(
-        "https://producttrack-backend-5wd3.onrender.com/api/production",
+        "https://producttrackpro-backend-14m1.onrender.com/api/production",
         {
           productName,
           quantity,
@@ -67,7 +67,7 @@ function Production() {
 
     try {
       await axios.delete(
-        `https://producttrack-backend-5wd3.onrender.com/api/production/${id}`
+        `https://producttrackpro-backend-14m1.onrender.com/api/production/${id}`
       );
 
       fetchProduction();

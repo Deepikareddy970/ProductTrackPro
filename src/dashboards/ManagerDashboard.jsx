@@ -28,7 +28,7 @@ function ManagerDashboard() {
   const fetchDashboard = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/reports/dashboard"
+        "https://producttrackpro-backend-14m1.onrender.com/api/reports/dashboard"
       );
 
       setReport(res.data);
@@ -40,7 +40,7 @@ function ManagerDashboard() {
   const fetchEmployees = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/employees"
+        "https://producttrackpro-backend-14m1.onrender.com/api/employees"
       );
 
       setEmployees(res.data);

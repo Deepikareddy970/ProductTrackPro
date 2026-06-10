@@ -34,7 +34,7 @@ function AdminDashboard() {
   const fetchDashboard = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/reports/dashboard"
+        "https://producttrackpro-backend-14m1.onrender.com/api/reports/dashboard"
       );
 
       setDashboardData(res.data);

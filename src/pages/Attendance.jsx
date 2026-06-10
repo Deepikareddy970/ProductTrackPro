@@ -19,7 +19,7 @@ function Attendance() {
   const fetchAttendance = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/attendance"
+        "https://producttrackpro-backend-14m1.onrender.com/api/attendance"
       );
 
       setAttendance(res.data);
@@ -36,7 +36,7 @@ function Attendance() {
 
     try {
       await axios.post(
-        "https://producttrack-backend-5wd3.onrender.com/api/attendance",
+        "https://producttrackpro-backend-14m1.onrender.com/api/attendance",
         {
           employeeName,
           status,
@@ -65,7 +65,7 @@ function Attendance() {
 
     try {
       await axios.delete(
-        `https://producttrack-backend-5wd3.onrender.com/api/attendance/${id}`
+        `https://producttrackpro-backend-14m1.onrender.com/api/attendance/${id}`
       );
 
       fetchAttendance();

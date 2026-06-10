@@ -24,7 +24,7 @@ function Sales() {
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/sales"
+        "https://producttrackpro-backend-14m1.onrender.com/api/sales"
       );
 
       setOrders(res.data);
@@ -48,7 +48,7 @@ function Sales() {
 
     try {
       await axios.post(
-        "https://producttrack-backend-5wd3.onrender.com/api/sales",
+        "https://producttrackpro-backend-14m1.onrender.com/api/sales",
         {
           customer,
           shopName,
@@ -78,7 +78,7 @@ function Sales() {
   const deleteOrder = async (id) => {
     try {
       await axios.delete(
-        `https://producttrack-backend-5wd3.onrender.com/api/sales/${id}`
+        `https://producttrackpro-backend-14m1.onrender.com/api/sales/${id}`
       );
 
       fetchOrders();

@@ -21,7 +21,7 @@ function Inventory() {
   const fetchInventory = async () => {
     try {
       const res = await axios.get(
-        "https://producttrack-backend-5wd3.onrender.com/api/inventory"
+        "https://producttrackpro-backend-14m1.onrender.com/api/inventory"
       );
 
       setItems(res.data);
@@ -43,7 +43,7 @@ function Inventory() {
 
     try {
       await axios.post(
-        "https://producttrack-backend-5wd3.onrender.com/api/inventory",
+        "https://producttrackpro-backend-14m1.onrender.com/api/inventory",
         {
           productName,
           category,
@@ -74,7 +74,7 @@ function Inventory() {
 
     try {
       await axios.delete(
-        `https://producttrack-backend-5wd3.onrender.com/api/inventory/${id}`
+        `https://producttrackpro-backend-14m1.onrender.com/api/inventory/${id}`
       );
 
       fetchInventory();
